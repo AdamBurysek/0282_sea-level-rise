@@ -6,7 +6,7 @@ const GamePage = (props: any) => {
   const navigate = useNavigate();
   const sliderRef = useRef<HTMLInputElement>(null);
   const [value, setValue] = useState(0);
-  const [thumbPostion, setThumbPostion] = useState(-635);
+  const [thumbPostion, setThumbPostion] = useState(-637);
   const [wavesAnimate, setWavesAnimate] = useState(false);
 
   useEffect(() => {
@@ -32,8 +32,8 @@ const GamePage = (props: any) => {
       const max = parseInt(sliderRef.current.max);
       const val = parseInt(event.target.value);
       const percentage = (val - min) / (max - min);
-      const thumbPositionInPx = sliderWidth * percentage - value * 1.9;
-      setThumbPostion(thumbPositionInPx - 635);
+      const thumbPositionInPx = sliderWidth * percentage - val * 2;
+      setThumbPostion(thumbPositionInPx - 637);
     }
   };
 
@@ -71,12 +71,17 @@ const GamePage = (props: any) => {
       </div>
       <img
         className="game_img"
-        src={`../../../images/mapImages/Banglades0${value}.png`}
+        src={`file://${__dirname}/../../../images/mapImages/Banglades0${value}.png`}
         alt="Bangladesh Map"
       />
       <div
         className="water"
-        style={{ bottom: thumbPostion }}
+        style={{
+          bottom: thumbPostion,
+          boxShadow: `0px 0px ${
+            150 - value * 10
+          }px 0px rgba(255, 255, 255, 0.791)`,
+        }}
       >
         <img
           className={wavesAnimate ? "waves waves_move" : "waves"}
