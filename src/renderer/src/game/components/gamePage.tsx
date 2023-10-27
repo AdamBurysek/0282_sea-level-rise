@@ -1,12 +1,23 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Waves from "../images/vlny.png";
 
 const GamePage = (props: any) => {
   const navigate = useNavigate();
   const sliderRef = useRef<HTMLInputElement>(null);
-
   const [value, setValue] = useState(0);
   const [thumbPostion, setThumbPostion] = useState(-635);
+  const [wavesAnimate, setWavesAnimate] = useState(false);
+
+  useEffect(() => {
+    setWavesAnimate(true);
+    const intervalId = setInterval(() => {
+      setWavesAnimate((prevIsToggled) => !prevIsToggled);
+    }, 10000);
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     let val = parseInt(event.target.value);
@@ -31,7 +42,7 @@ const GamePage = (props: any) => {
     props.setGameStarts(false);
   }
 
-  const marks = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  const marks = ["0", "1", "2", "3", "4", "5", "6", "7", "8"];
   return (
     <div>
       <div className="slider_box">
@@ -66,7 +77,12 @@ const GamePage = (props: any) => {
       <div
         className="water"
         style={{ bottom: thumbPostion }}
-      ></div>
+      >
+        <img
+          className={wavesAnimate ? "waves waves_move" : "waves"}
+          src={Waves}
+        ></img>
+      </div>
       <button
         className="back_button"
         onClick={testBackButtonClick}
