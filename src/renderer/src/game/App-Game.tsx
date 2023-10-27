@@ -8,11 +8,11 @@ function AppGame(props: any) {
       <Routes>
         <Route
           path="/"
-          element={<StartPage></StartPage>}
+          element={<StartPage setGameStarts={props.setGameStarts}></StartPage>}
         ></Route>
         <Route
           path="/game"
-          element={<GamePage></GamePage>}
+          element={<GamePage setGameStarts={props.setGameStarts}></GamePage>}
         ></Route>
       </Routes>
     </div>

@@ -1,11 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import WorldMap from "../images/stoupani mori.png";
 
-const StartPage = () => {
+const StartPage = (props: any) => {
   const navigate = useNavigate();
 
   function testButtonClick() {
     navigate("/game");
+    props.setGameStarts(true);
   }
   return (
     <div className="world-map_image">
