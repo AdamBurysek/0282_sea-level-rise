@@ -71,7 +71,7 @@ const GamePage = (props: any) => {
       </div>
       <img
         className="game_img"
-        src={`file://${__dirname}/../../../images/mapImages/Banglades0${value}.png`}
+        src={`../../../images/mapImages/Banglades0${value}.png`}
         alt="Bangladesh Map"
       />
       <div
