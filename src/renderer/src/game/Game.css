@@ -1,0 +1,36 @@
+h2 {
+  font-family: "Dimenze-Bold";
+  font-size: 64px;
+  color: white;
+}
+
+h3 {
+  font-family: "Dimenze-Bold";
+  font-size: 32px;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.world-map_image {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.test_button {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 300px;
+  left: -150px;
+}
+
+.test_back_button {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 300px;
+  left: 150px;
+}

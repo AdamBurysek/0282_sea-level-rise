@@ -1,0 +1,14 @@
+{
+  "server": false,
+  "id": "131",
+  "section": "planet",
+  "label": {
+    "cz": "stpoupání moří",
+    "en": "sea level rise",
+    "de": "das sea level rise"
+  },
+  "x": 50,
+  "y": 50,
+  "port": "/dev/ttyUSB0",
+  "baudrate": 9600
+}
