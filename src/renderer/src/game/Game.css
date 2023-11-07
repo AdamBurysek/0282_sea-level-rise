@@ -15,8 +15,8 @@ h3 {
 
 .world-map_image {
   position: absolute;
-  top: 205px;
-  left: 200px;
+  top: 10px;
+  left: 0px;
 }
 
 .test_button {
@@ -24,7 +24,7 @@ h3 {
   width: 200px;
   height: 100px;
   top: 300px;
-  left: -150px;
+  left: 100px;
 }
 
 .back_button {
@@ -36,39 +36,42 @@ h3 {
   border-radius: 50px;
   border: 5px solid #145df3;
   background: #fff;
-  box-shadow: 0px 0px 30px 0px #fff;
+  /* box-shadow: 0px 0px 30px 0px #fff; */
   text-align: center;
   font-family: "Dimenze-Regular";
   font-size: 40px;
+  display: flex;
+  justify-content: center;
+  line-height: 60px;
 }
 
 .slider_box {
   position: absolute;
-  top: 510px;
-  left: 1400px;
+  top: 527px;
+  left: 1350px;
 }
 
 .slider {
-  width: 600px;
+  width: 682px;
   transform: rotate(270deg);
   color: rgb(255, 255, 255);
 }
 
 .slider_box h3 {
   position: absolute;
-  top: -400px;
-  left: 290px;
+  top: -420px;
+  left: 333px;
 }
 
 .water {
   position: absolute;
-  background-color: blue;
+  background-color: #5969c3;
   width: 100%;
   height: 900px;
   z-index: -2;
   /* box-shadow: 0px 0px 150px 0px rgba(255, 255, 255, 0.791); */
   overflow: hidden;
-  border-top: 3px solid rgba(255, 255, 255, 0.47);
+  /* border-top: 3px solid rgba(255, 255, 255, 0.47); */
 }
 
 .game_img {
@@ -77,23 +80,63 @@ h3 {
   left: 122px;
   width: 1474px;
   height: 666px;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   user-select: none;
 }
 
 .waves {
   position: absolute;
-  width: 3500px;
+  width: 2500px;
   height: 1200px;
   left: 0px;
   transition: all 15s;
-  top: 0px;
-  opacity: 0.5;
-  border: 3px solid black;
+  top: -150px;
+  opacity: 0.2;
+  /* border: 3px solid black; */
 }
 
 .waves_move {
-  left: -500px;
-  top: -100px;
-  opacity: 0.3;
+  left: -200px;
+  top: -300px;
+  opacity: 0.05;
+}
+
+.city_title {
+  position: absolute;
+  left: 117px;
+  top: 20px;
+  font-size: 80px;
+}
+
+.game_info-text {
+  position: absolute;
+  left: 1440px;
+  top: 106px;
+}
+.game_info-text {
+  position: absolute;
+  left: 1440px;
+  top: 106px;
+}
+
+.game_units-text {
+  position: absolute;
+  left: 1720px;
+  top: 106px;
+}
+
+.game_plus-text {
+  position: absolute;
+  left: 1650px;
+  top: 106px;
+}
+
+.main_info-text {
+  position: absolute;
+  top: 990px;
+  left: 480px;
+}
+
+.main_info-text b {
+  color: red;
 }

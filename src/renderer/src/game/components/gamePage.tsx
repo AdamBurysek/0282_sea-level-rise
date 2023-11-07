@@ -6,7 +6,7 @@ const GamePage = (props: any) => {
   const navigate = useNavigate();
   const sliderRef = useRef<HTMLInputElement>(null);
   const [value, setValue] = useState(0);
-  const [thumbPostion, setThumbPostion] = useState(-637);
+  const [thumbPostion, setThumbPostion] = useState(-693);
   const [wavesAnimate, setWavesAnimate] = useState(false);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const GamePage = (props: any) => {
       const val = parseInt(event.target.value);
       const percentage = (val - min) / (max - min);
       const thumbPositionInPx = sliderWidth * percentage - val * 2;
-      setThumbPostion(thumbPositionInPx - 637);
+      setThumbPostion(thumbPositionInPx - 693);
     }
   };
 
@@ -45,6 +45,10 @@ const GamePage = (props: any) => {
   const marks = ["0", "1", "2", "3", "4", "5", "6", "7", "8"];
   return (
     <div>
+      <h2 className="city_title">Bangladesh</h2>
+      <h3 className="game_info-text">Výška vody:</h3>
+      <h3 className="game_plus-text">{value !== 0 ? "+" : ""}</h3>
+      <h3 className="game_units-text">m</h3>
       <div className="slider_box">
         <input
           className="slider"
@@ -71,7 +75,7 @@ const GamePage = (props: any) => {
       </div>
       <img
         className="game_img"
-        src={`../../../images/mapImages/Banglades0${value}.png`}
+        src={`./images/mapImages/Banglades0${value}.png`}
         alt="Bangladesh Map"
       />
       <div
@@ -80,7 +84,7 @@ const GamePage = (props: any) => {
           bottom: thumbPostion,
           boxShadow: `0px 0px ${
             150 - value * 10
-          }px 0px rgba(255, 255, 255, 0.791)`,
+          }px 0px rgba(255, 255, 255, 0.5)`,
         }}
       >
         <img
