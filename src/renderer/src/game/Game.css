@@ -140,3 +140,32 @@ h3 {
 .main_info-text b {
   color: red;
 }
+
+.city_button {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  border-radius: 20px;
+  border: 0;
+  transition: all 0.5s;
+}
+
+.city_button_bigger {
+  transform: translate(-4px, -4px);
+  width: 28px;
+  height: 28px;
+}
+
+.city_text {
+  position: relative;
+  left: -45px;
+  top: 22px;
+  font-size: large;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.text_upper {
+  top: -25px;
+}

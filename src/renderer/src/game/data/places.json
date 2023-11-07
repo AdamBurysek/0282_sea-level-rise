@@ -1,0 +1,191 @@
+[
+  {
+    "latitude": 1133,
+    "longitude": 684,
+    "imageName": "Banglades",
+    "czechName": "Bangladéš",
+    "englishName": "Bangladesh",
+    "germanName": "Bangladesch",
+    "textOnTop": true
+  },
+  {
+    "latitude": 1222,
+    "longitude": 622,
+    "imageName": "Bohai_Bay",
+    "czechName": "Bohai Bay",
+    "englishName": "Bohai Bay",
+    "germanName": "Bohai-Bucht",
+    "textOnTop": true
+  },
+  {
+    "latitude": 649,
+    "longitude": 881,
+    "imageName": "Buenos_Aires",
+    "czechName": "Buenos Aires",
+    "englishName": "Buenos Aires",
+    "germanName": "Buenos Aires",
+    "textOnTop": true
+  },
+  {
+    "latitude": 835,
+    "longitude": 561,
+    "imageName": "Eastern_England",
+    "czechName": "Východní Anglie",
+    "englishName": "Eastern England",
+    "germanName": "Ostengland",
+    "textOnTop": true
+  },
+  {
+    "latitude": 932,
+    "longitude": 598,
+    "imageName": "Eastern_Romania",
+    "czechName": "Východní Rumunsko",
+    "englishName": "Eastern Romania",
+    "germanName": "Ostrumänien",
+    "textOnTop": true
+  },
+  {
+    "latitude": 574,
+    "longitude": 675,
+    "imageName": "Florida",
+    "czechName": "Florida",
+    "englishName": "Florida",
+    "germanName": "Florida",
+    "textOnTop": true
+  },
+  {
+    "latitude": 902,
+    "longitude": 540,
+    "imageName": "Gdansk_Kaliningrad",
+    "czechName": "Gdaňsk a Kaliningrad",
+    "englishName": "Gdansk and Kaliningrad",
+    "germanName": "Danzig und Kaliningrad",
+    "textOnTop": true
+  },
+  {
+    "latitude": 575,
+    "longitude": 770,
+    "imageName": "Guayaquil",
+    "czechName": "Guayaquil",
+    "englishName": "Guayaquil",
+    "germanName": "Guayaquil",
+    "textOnTop": true
+  },
+  {
+    "latitude": 1193,
+    "longitude": 708,
+    "imageName": "Ho_Chi_Minh",
+    "czechName": "Ho Či Minovo město",
+    "englishName": "Ho Chi Minh",
+    "germanName": "Hồ Chí Minh",
+    "textOnTop": true
+  },
+  {
+    "latitude": 1060,
+    "longitude": 681,
+    "imageName": "India_Pakistan_border",
+    "czechName": "Indicko Pakistánská hranice",
+    "englishName": "India Pakistan border",
+    "germanName": "Indisch-pakistanische Grenze",
+    "textOnTop": true
+  },
+  {
+    "latitude": 996,
+    "longitude": 657,
+    "imageName": "Iraq",
+    "czechName": "Irák",
+    "englishName": "Iraq",
+    "germanName": "Irak",
+    "textOnTop": true
+  },
+  {
+    "latitude": 963,
+    "longitude": 595,
+    "imageName": "Krasnodar",
+    "czechName": "Krasnodar",
+    "englishName": "Krasnodar",
+    "germanName": "Krasnodar",
+    "textOnTop": true
+  },
+  {
+    "latitude": 474,
+    "longitude": 664,
+    "imageName": "Mexico",
+    "czechName": "Mexiko",
+    "englishName": "Mexico",
+    "germanName": "Mexiko",
+    "textOnTop": true
+  },
+  {
+    "latitude": 856,
+    "longitude": 557,
+    "imageName": "Nedherlands",
+    "czechName": "Holandsko",
+    "englishName": "Nedherlands",
+    "germanName": "Niederlande",
+    "textOnTop": true
+  },
+  {
+    "latitude": 545,
+    "longitude": 657,
+    "imageName": "New_Orleans",
+    "czechName": "New Orleans",
+    "englishName": "New Orleans",
+    "germanName": "New Orleans",
+    "textOnTop": true
+  },
+  {
+    "latitude": 594,
+    "longitude": 616,
+    "imageName": "New_York",
+    "czechName": "New York",
+    "englishName": "New York",
+    "germanName": "New York",
+    "textOnTop": true
+  },
+  {
+    "latitude": 934,
+    "longitude": 652,
+    "imageName": "Nile_delta",
+    "czechName": "Delta Nilu",
+    "englishName": "Nile Delta",
+    "germanName": "Nildelta",
+    "textOnTop": true
+  },
+  {
+    "latitude": 919,
+    "longitude": 528,
+    "imageName": "Riga",
+    "czechName": "Riga",
+    "englishName": "Riga",
+    "germanName": "Riga",
+    "textOnTop": true
+  },
+  {
+    "latitude": 439,
+    "longitude": 627,
+    "imageName": "San_Francisco",
+    "czechName": "San Francisco",
+    "englishName": "San Francisco",
+    "germanName": "San Francisco",
+    "textOnTop": true
+  },
+  {
+    "latitude": 1235,
+    "longitude": 654,
+    "imageName": "Shanghai",
+    "czechName": "Šanghaj",
+    "englishName": "Shanghai",
+    "germanName": "Shanghai",
+    "textOnTop": true
+  },
+  {
+    "latitude": 878,
+    "longitude": 594,
+    "imageName": "Venezia_Padova",
+    "czechName": "Benátky a Padova",
+    "englishName": "Venezia and Padova",
+    "germanName": "Venedig und Padua",
+    "textOnTop": true
+  }
+]

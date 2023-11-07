@@ -45,7 +45,11 @@ const GamePage = (props: any) => {
   const marks = ["0", "1", "2", "3", "4", "5", "6", "7", "8"];
   return (
     <div>
-      <h2 className="city_title">Bangladesh</h2>
+      <h2 className="city_title">
+        {props.language === "cz" && props.placeInfo[1]}
+        {props.language === "en" && props.placeInfo[2]}
+        {props.language === "de" && props.placeInfo[3]}
+      </h2>
       <h3 className="game_info-text">Výška vody:</h3>
       <h3 className="game_plus-text">{value !== 0 ? "+" : ""}</h3>
       <h3 className="game_units-text">m</h3>
@@ -75,8 +79,8 @@ const GamePage = (props: any) => {
       </div>
       <img
         className="game_img"
-        src={`./images/mapImages/Banglades0${value}.png`}
-        alt="Bangladesh Map"
+        src={`./images/mapImages/${props.placeInfo[0]}0${value}.png`}
+        alt={props.placeInfo[2]}
       />
       <div
         className="water"
