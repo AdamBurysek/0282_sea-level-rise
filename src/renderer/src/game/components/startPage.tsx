@@ -33,11 +33,11 @@ const StartPage = (props: any) => {
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(restartAnimation, 10000);
+    const interval = setInterval(restartAnimation, 15000);
     return () => {
       clearInterval(interval);
     };
-  }, [updates === 4]);
+  }, [updates]);
 
   return (
     <div>

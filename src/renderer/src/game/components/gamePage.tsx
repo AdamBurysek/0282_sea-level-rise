@@ -79,7 +79,7 @@ const GamePage = (props: any) => {
       </div>
       <img
         className="game_img"
-        src={`./images/mapImages/${props.placeInfo[0]}0${value}.png`}
+        src={`./images/mapImages/${props.placeInfo[0]}0${value}.webp`}
         alt={props.placeInfo[2]}
       />
       <div
