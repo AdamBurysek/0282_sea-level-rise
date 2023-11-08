@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const StartPage = (props: any) => {
   const [randomNumber, setRandomNumber] = useState<number | null>(null);
-  const maxUpdates = 3; // Number of times to update the random number
+  const maxUpdates = 3;
   let updates = 0;
 
   const getRandomNumber = (): number => {
@@ -15,18 +15,29 @@ const StartPage = (props: any) => {
     if (updates < maxUpdates) {
       setRandomNumber(getRandomNumber());
       updates++;
+      console.log(updates);
     } else {
-      setRandomNumber(null); // Set random number to null after maxUpdates
+      setRandomNumber(null);
     }
   };
 
-  useEffect(() => {
-    const interval = setInterval(updateRandomNumber, 1000); // Update every 1 second
+  const restartAnimation = () => {
+    updates = 0;
+  };
 
+  useEffect(() => {
+    const interval = setInterval(updateRandomNumber, 1000);
     return () => {
-      clearInterval(interval); // Cleanup to ensure the interval is cleared on unmount
+      clearInterval(interval);
     };
   }, []);
+
+  useEffect(() => {
+    const interval = setInterval(restartAnimation, 10000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [updates === 4]);
 
   return (
     <div>
