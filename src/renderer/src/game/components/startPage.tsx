@@ -3,7 +3,7 @@ import places from "../data/places.json";
 import { useEffect, useState } from "react";
 
 const StartPage = (props: any) => {
-  const [randomNumber, setRandomNumber] = useState<number | null>(null);
+  const [randomCityNumber, setRandomCityNumber] = useState<number | null>(null);
   const maxUpdates = 3;
   let updates = 0;
 
@@ -13,11 +13,10 @@ const StartPage = (props: any) => {
 
   const updateRandomNumber = () => {
     if (updates < maxUpdates) {
-      setRandomNumber(getRandomNumber());
+      setRandomCityNumber(getRandomNumber());
       updates++;
-      console.log(updates);
     } else {
-      setRandomNumber(null);
+      setRandomCityNumber(null);
     }
   };
 
@@ -52,7 +51,7 @@ const StartPage = (props: any) => {
           id={place.imageName}
           key={place.englishName}
           className={
-            randomNumber === index
+            randomCityNumber === index
               ? "city_button city_button_bigger"
               : "city_button"
           }
