@@ -30,259 +30,195 @@ body {
   user-select: none;
 }
 
-#content {
-  position: absolute;
-  z-index: -1;
-}
-
-.ui_screen {
-  position: absolute;
-  width: 1920px;
-  height: 1080px;
-  z-index: 10;
-  clip-path: polygon(
-    0% 0%,
-    0% 100%,
-    0 100%,
-    0 24%,
-    78% 25%,
-    78% 100%,
-    41% 100%,
-    0 100%,
-    100% 100%,
-    100% 0%
-  );
-}
-
-.ui_hide {
-  z-index: -50;
-}
-
-/* .fake_game {
-  position: relative;
-  width: 1920px;
-  height: 1080px;
-  z-index: -5;
-} */
-
-.clouds {
-  position: absolute;
-  height: 1080px;
-
-  top: 0;
-  right: 0;
-  z-index: -8;
-}
-
-.top-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1920px;
-  height: 205px;
-  background-color: rgba(0, 0, 0, 0.137);
-  transition: translate 1s linear;
-}
-
-.top-bar_hide {
-  translate: 0 -300px;
-}
-
-.top-bar_badge {
-  position: absolute;
-  left: 31px;
-  top: 25px;
-}
-
-.top-bar_badge_image {
-  position: relative;
-  top: -180px;
-  left: 45px;
-}
-
-.top-bar_badge_text {
-  position: relative;
-  top: -232px;
-  left: -18px;
-  text-transform: capitalize;
-  text-align: center;
-  font-family: "Dimenze-Regular", sans-serif;
-  font-size: 28px;
-}
-
-.top-bar_heading {
-  position: relative;
-  top: 35px;
-  left: 350px;
-  width: fit-content;
-  color: #fff;
-  text-align: left;
-  font-family: "Dimenze-Bold", sans-serif;
-  font-size: 55px;
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-.language_select {
-  width: 94px;
-  height: 105px;
-  position: relative;
-  left: 1750px;
-  top: -90px;
-  background: none;
-  border: 0;
-}
-
-.language_text {
-  position: relative;
-  color: #fff;
-  font-family: "Dimenze-Regular", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  top: 4px;
-  margin: 0 15px;
-}
-
-.accessibility {
-  width: 125px;
-  height: 105px;
-  position: relative;
-  left: 1560px;
-  top: -90px;
-  background: none;
-  border: 0;
-}
-
-.side-bar {
-  position: absolute;
-  top: 100px;
-  right: 0px;
-  width: 500px;
-  height: 640px;
-  overflow: hidden;
-  display: grid;
-  margin-top: 180px;
-  grid-template-rows: 200px 200px 200px;
-  transition: translate 1s linear;
-  /* background-color: rgba(0, 0, 0, 0.73); */
-}
-
-.side-bar_hide {
-  translate: 300px;
-}
-
-.side-bar h6 {
-  position: absolute;
-  color: #000;
-  font-family: Open Sans;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin: 0;
-}
-
-.side-bar button {
-  position: relative;
-  background: none;
-  border: 0;
-  justify-self: end;
-  right: -83px;
-  transition: all 0.8s;
-}
-
-.side-bar .active {
-  translate: -50px;
-}
-
-.home_button {
-  grid-row: 1;
-}
-
-.side-button_icon {
-  position: absolute;
-  top: 25px;
-  right: 110px;
-}
-
-.home_icon {
-  position: absolute;
-  top: 25px;
-  right: 50px;
-}
-
-.how-to_button {
-  grid-row: 2;
-}
-
-.know-more_button {
-  grid-row: 3;
-}
-
-.side_button-text {
-  display: inline;
-  text-align: center;
-  font-family: "Dimenze-Regular", sans-serif;
-  font-size: 24px;
-  line-height: 1.1;
-}
-
-.active .side_button-text {
-  color: white;
-}
-
-.side_button-text_container {
-  position: absolute;
-  top: 120px;
-  left: 95px;
-  width: 120px;
-  height: 50px;
-  text-align: center;
-}
-
-.map {
-  position: absolute;
-  bottom: 25px;
-  right: 35px;
-  z-index: 5;
-  transition: translate 1s linear;
-}
-
-.map_hide {
-  translate: 0 140px;
-}
-
-.map button {
-  background: none;
-  border: 0;
-}
-
-.active-map-button {
-  filter: drop-shadow(0px 0px 10px #ffffff);
-}
-
-.map-icon_text {
-  margin: 0;
-  color: #fff;
-  font-family: "Dimenze-Regular", sans-serif;
-  font-size: 24px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: black;
-}
-
-.small_text {
-  scale: 0.8;
-}
-
 .game {
   position: absolute;
   width: 1920px;
   height: 1080px;
   z-index: 0;
+}
+
+h2 {
+  font-family: "Dimenze-Bold";
+  font-size: 64px;
+  color: white;
+}
+
+h3 {
+  font-family: "Dimenze-Bold";
+  font-size: 32px;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.world-map_image {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+
+.test_button {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 300px;
+  left: 100px;
+}
+
+.back_button {
+  position: absolute;
+  top: 945px;
+  left: 129px;
+  width: 200px;
+  height: 80px;
+  border-radius: 50px;
+  border: 5px solid #145df3;
+  background: #fff;
+  /* box-shadow: 0px 0px 30px 0px #fff; */
+  text-align: center;
+  font-family: "Dimenze-Regular";
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  line-height: 60px;
+}
+
+.slider_box {
+  position: absolute;
+  top: 527px;
+  left: 1390px;
+}
+
+.slider {
+  width: 600px;
+  transform: rotate(270deg);
+  color: rgb(255, 255, 255);
+}
+
+.slider_box h3 {
+  position: absolute;
+  top: -420px;
+  left: 290px;
+}
+
+.water {
+  position: absolute;
+  background-color: #1496f3;
+  width: 100%;
+  height: 900px;
+  z-index: -2;
+  /* box-shadow: 0px 0px 150px 0px rgba(255, 255, 255, 0.791); */
+  overflow: hidden;
+  /* border-top: 3px solid rgba(255, 255, 255, 0.47); */
+}
+
+.game_img {
+  position: absolute;
+  top: 207px;
+  left: 122px;
+  width: 1474px;
+  height: 666px;
+  border: 3px solid black;
+  user-select: none;
+}
+
+.waves {
+  position: absolute;
+  width: 2500px;
+  height: 1200px;
+  left: 0px;
+  transition: all 15s;
+  top: -150px;
+  opacity: 0.2;
+  /* border: 3px solid black; */
+}
+
+.waves_move {
+  left: -200px;
+  top: -300px;
+  opacity: 0.05;
+}
+
+.city_title {
+  position: absolute;
+  left: 117px;
+  top: 20px;
+  font-size: 80px;
+}
+
+.game_info-text {
+  position: absolute;
+  left: 1440px;
+  top: 106px;
+}
+.game_info-text {
+  position: absolute;
+  left: 1440px;
+  top: 106px;
+}
+
+.game_units-text {
+  position: absolute;
+  left: 1720px;
+  top: 106px;
+}
+
+.game_plus-text {
+  position: absolute;
+  left: 1650px;
+  top: 106px;
+}
+
+.main_info-text {
+  position: absolute;
+  top: 990px;
+  left: 480px;
+}
+
+.main_info-text b {
+  color: red;
+}
+
+.city_button {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  border-radius: 20px;
+  border: 0;
+  transition: all 0.5s;
+}
+
+.city_button_bigger {
+  transform: translate(-4px, -4px);
+  width: 28px;
+  height: 28px;
+}
+
+.city_text {
+  position: relative;
+  left: -45px;
+  top: 22px;
+  font-size: large;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.text_upper {
+  top: -25px;
+}
+
+.buoy {
+  position: absolute;
+  width: 180px;
+  /* top: 710px; */
+  left: 1720px;
+  z-index: -5;
+  transform: rotate(15deg);
+  transition: transform 4s;
+}
+
+.buoy_move {
+  transform: rotate(-15deg);
 }

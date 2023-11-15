@@ -16,32 +16,8 @@
   left: 50px;
   width: 1600px;
   height: 800px;
+  padding-right: 30px;
   overflow-y: auto;
-  /* background-color: red; */
-}
-
-.know-more_content h1 {
-  font-family: "Dimenze-Bold";
-  font-size: 80px;
-  color: #d88124;
-  text-align: center;
-}
-
-.know-more_content h4 {
-  font-family: "Dimenze-Bold";
-  font-size: 50px;
-  color: #d88124;
-  text-align: center;
-}
-
-ul {
-  color: white;
-  font-family: "Dimenze-Regular";
-  font-size: 48px;
-}
-
-b {
-  color: #d88124;
 }
 
 .know-more_content p {
@@ -56,23 +32,16 @@ b {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d88124;
+  background: #145df3;
   -webkit-border-radius: 10px;
-  -webkit-box-shadow: 0px 1px 2px #d88124;
+  -webkit-box-shadow: 0px 1px 2px #145df3;
 }
 
 ::-webkit-scrollbar-corner {
-  background: #d88124;
+  background: #145df3;
 }
 
 ::-webkit-scrollbar-track {
   background: #515151;
   -webkit-border-radius: 10px;
-}
-
-.city_img {
-  display: flex;
-  margin: 0 auto;
-  position: relative;
-  width: 800px;
 }
