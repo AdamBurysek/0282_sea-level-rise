@@ -170,10 +170,15 @@ h3 {
   top: 106px;
 }
 
+.main_info-text-box {
+  display: flex;
+  justify-content: center;
+}
+
 .main_info-text {
   position: absolute;
+  margin-right: 80px;
   top: 990px;
-  left: 480px;
 }
 
 .main_info-text b {

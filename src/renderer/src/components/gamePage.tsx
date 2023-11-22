@@ -3,11 +3,13 @@ import { useNavigate } from "react-router-dom";
 import Waves from "../images/vlny.png";
 import Buoy from "../images/buoy.png";
 
+const WATER_OFFSET: number = -652;
+
 const GamePage = (props: any) => {
   const navigate = useNavigate();
   const sliderRef = useRef<HTMLInputElement>(null);
   const [value, setValue] = useState(0);
-  const [thumbPostion, setThumbPostion] = useState(-652);
+  const [thumbPostion, setThumbPostion] = useState(WATER_OFFSET);
   const [wavesAnimate, setWavesAnimate] = useState(false);
   const [buoyAnimation, setBuoyAnimation] = useState(true);
 
@@ -48,11 +50,11 @@ const GamePage = (props: any) => {
       const val = parseInt(event.target.value);
       const percentage = (val - min) / (max - min);
       const thumbPositionInPx = sliderWidth * percentage - val * 2;
-      setThumbPostion(thumbPositionInPx - 652);
+      setThumbPostion(thumbPositionInPx - WATER_OFFSET * -1);
     }
   };
 
-  function testBackButtonClick() {
+  function handleBackButtonClick() {
     navigate("/");
     props.setGameStarts(false);
   }
@@ -65,7 +67,12 @@ const GamePage = (props: any) => {
         {props.language === "en" && props.placeInfo[2]}
         {props.language === "de" && props.placeInfo[3]}
       </h2>
-      <h3 className="game_info-text">Výška vody:</h3>
+      <h3 className="game_info-text">
+        {" "}
+        {props.language === "cz" && "Výška vody:"}
+        {props.language === "en" && "Water level:"}
+        {props.language === "de" && "Wasserstand:"}
+      </h3>
       <h3 className="game_plus-text">{value !== 0 ? "+" : ""}</h3>
       <h3 className="game_units-text">m</h3>
       <div className="slider_box">
@@ -118,9 +125,11 @@ const GamePage = (props: any) => {
       ></img>
       <button
         className="back_button"
-        onClick={testBackButtonClick}
+        onClick={handleBackButtonClick}
       >
-        Back
+        {props.language === "cz" && "Zpět"}
+        {props.language === "en" && "Back"}
+        {props.language === "de" && "Zurück"}
       </button>
     </div>
   );

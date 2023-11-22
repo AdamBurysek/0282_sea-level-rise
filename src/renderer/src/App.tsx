@@ -2,7 +2,7 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import StartPage from "./components/startPage";
 import GamePage from "./components/gamePage";
 import places from "./data/places.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 function App(props: any) {
@@ -10,7 +10,7 @@ function App(props: any) {
 
   const navigate = useNavigate();
 
-  const handleCityButtonClick = (event) => {
+  const handleCityButtonClick = (event: any) => {
     const placeId = event.target.id;
     const place: any = places.find((place) => place.imageName === placeId);
     if (place) {
@@ -24,6 +24,17 @@ function App(props: any) {
       props.setGameStarts(true);
     }
   };
+
+  function gameReset() {
+    if (props.isActive === false) {
+      navigate("/");
+      props.setGameStarts(false);
+    }
+  }
+
+  useEffect(() => {
+    gameReset();
+  }, [props.isActive]);
 
   return (
     <div>
