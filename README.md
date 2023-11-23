@@ -1,4 +1,16 @@
-Webkamera Svpro SV-USB8MP02G-SFV
+# VIDA - Stoupání moří
+
+Aplikace, která zobrazuje jak by se zaplavily určité oblasti, kdyby se zvedla hladina moře o zadanou výšku. Po kliknutí na oblast můžete určovat hladinu moře pomocí slideru vpravo.
+
+#
+
+# Odkaz na web
+
+[https://adamplanet.cz/ostatniweby/sealevelrise](https://adamplanet.cz/ostatniweby/sealevelrise)
+
+Rozlišení 1920x1080. Aplikace není responzivní, tudíž se nepřispůsobí velikosti okna prohlížeče.
+
+#
 
 # electron-app
 

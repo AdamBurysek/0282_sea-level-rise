@@ -35,7 +35,7 @@ const HowToPage = (props: any) => {
               Použijte počítačovou aplikaci, abyste se mohli podívat i na jiná
               místa na Zemi. Vyberte si z nabídky míst, označených na mapě
               špendlíkem. Pak můžete zjistit, jak velká část území by byla
-              zaplavena, kdyby hladina moře stoupla až o 10 m oproti současnému
+              zaplavena, kdyby hladina moře stoupla až o 9 m oproti současnému
               stavu.
             </p>
           </div>
@@ -54,7 +54,7 @@ const HowToPage = (props: any) => {
               Use the computer application to visit other places on Earth. Pick
               one of the places that is marked with pins on the map. Then you
               can find out what area would be flooded if the sea level increased
-              by up to 10 m compared to the current situation.
+              by up to 9 m compared to the current situation.
             </p>
           </div>
         )}
@@ -73,7 +73,7 @@ const HowToPage = (props: any) => {
               ansehen zu können. Wählt aus dem Angebot der Orte aus, die auf der
               Karte mit einer Stecknadel markiert sind. Dann könnt ihr
               untersuchen, ein wie großer Teil des Gebiets überschwemmt werden
-              würde, wenn der Meeresspiegel um 10 cm gegenüber dem derzeitigen
+              würde, wenn der Meeresspiegel um 9 m gegenüber dem derzeitigen
               Stand steigen würde.
             </p>
           </div>
