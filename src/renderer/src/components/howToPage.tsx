@@ -25,56 +25,56 @@ const HowToPage = (props: any) => {
         {props.language === "cz" && (
           <div>
             <p>
-              Na zobrazené mapě máte možnost stát se obchodním cestujícím. Ten
-              potřebuje najít co nejkratší okružní trasu přes všechna vyznačená
-              města. Město, které již bylo navštíveno, má červenou barvu. V
-              levém horním rohu lze vidět aktuálně uraženou celkovou vzdálenost.
-              Po naklikání všech měst se dozvíte, jestli vaše cesta byla
-              nejkratší možná nebo ne. V případě, že nejkratší nebyla, uvidíte
-              nejkratší možnou vzdálenost a případně si můžete zobrazit správné
-              řešení nebo to zkusit znovu.
+              Tlačítky uprostřed akvárií můžete ovládat hladinu moře a sledovat,
+              jak se zvyšuje nebo snižuje. Ve všech akváriích se mořská hladina
+              zvedá/klesá stejně rychle. Vlivem rozdílných tvarů pobřeží
+              (Bangladéš, Nizozemsko, Norsko, Florida) však můžete pozorovat
+              odlišnosti v rozsahu zaplaveného území.
             </p>
             <p>
-              Na dotykové obrazovce si můžete vybrat ze tří úrovní obtížnosti.
-              Každá obtížnost má 3 různé varianty, které se generují náhodně.
-              Cestu označíte kliknutím na město, které chcete navštívit.
-            </p>
-            <p>
-              V těžké úrovni je vzdálenost označena jako Km*. To je z důvodu
-              zakulacení země, které není ve hře zohledněno.
+              Použijte počítačovou aplikaci, abyste se mohli podívat i na jiná
+              místa na Zemi. Vyberte si z nabídky míst, označených na mapě
+              špendlíkem. Pak můžete zjistit, jak velká část území by byla
+              zaplavena, kdyby hladina moře stoupla až o 10 m oproti současnému
+              stavu.
             </p>
           </div>
         )}
         {props.language === "en" && (
           <div>
             <p>
-              You can become a traveling salesman on a planar map and a globe.
-              The traveling salesman needs to find the shortest circular route
-              through all the towns that are marked with pegs. The route is
-              marked using a string indicating the length of the route and a
-              mark indicating the shortest possible route.
+              You can control the sea level by pressing the buttons in the
+              middle of the aquariums and watch how it rises or falls. The sea
+              level rises/falls at the same rate in all aquaria. However, due to
+              the different shapes of the coastlines (Bangladesh, the
+              Netherlands, Norway and Florida) you can observe differences in
+              the extent of the flooded area.
             </p>
             <p>
-              On the touchscreen, you can choose from among three levels of
-              difficulty. The route is marked by tracing your finger between the
-              towns.
+              Use the computer application to visit other places on Earth. Pick
+              one of the places that is marked with pins on the map. Then you
+              can find out what area would be flooded if the sea level increased
+              by up to 10 m compared to the current situation.
             </p>
           </div>
         )}
         {props.language === "de" && (
           <div>
             <p>
-              Auf einer ebenen Karte und einem Globus habt ihr die Möglichkeit,
-              zu einem Handelsreisenden zu werden. Dieser muss eine möglichst
-              kurze Rundstrecke über alle durch die Stifte gekennzeichneten
-              Städte finden. Die Strecke wird mit einer Schnur, die die Länge
-              der Strecke zeigt, und mit einer Markierung, die den kürzesten
-              möglichen Weg kennzeichnet, veranschaulicht.
+              Wollen Sie die Meereshöhe steuern, dann drücken Sie die Knöpfe in
+              der Mitte der Aquarien und beobachten Sie, wie sie steigt oder
+              fällt. In allen Aquarien steigt/sinkt der Meeresspiegel gleich
+              schnell. Durch den Einfluss der unterschiedlichen Küstenformen
+              (Bangladesch, Niederlande, Norwegen, Florida) könnt ihr jedoch
+              einen Unterschied im Umfang des überschwemmten Gebiets beobachten.
             </p>
             <p>
-              Auf dem Touchscreen könnt ihr aus drei Schwierigkeitsebenen der
-              Aufgabe auswählen. Der Weg wird durch Ziehen des Fingers zwischen
-              den einzelnen Städten markiert.
+              Verwendet die Computeranwendung, um auch andere Orte auf der Erde
+              ansehen zu können. Wählt aus dem Angebot der Orte aus, die auf der
+              Karte mit einer Stecknadel markiert sind. Dann könnt ihr
+              untersuchen, ein wie großer Teil des Gebiets überschwemmt werden
+              würde, wenn der Meeresspiegel um 10 cm gegenüber dem derzeitigen
+              Stand steigen würde.
             </p>
           </div>
         )}
