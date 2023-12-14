@@ -1,8 +1,8 @@
+import { useEffect, useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import StartPage from "./components/startPage";
 import GamePage from "./components/gamePage";
 import places from "./data/places.json";
-import { useEffect, useState } from "react";
 import "./App.css";
 
 function App(props: any) {
@@ -45,9 +45,9 @@ function App(props: any) {
               setGameStarts={props.setGameStarts}
               language={props.language}
               handleCityButtonClick={handleCityButtonClick}
-            ></StartPage>
+            />
           }
-        ></Route>
+        />
         <Route
           path="/game"
           element={
@@ -55,9 +55,9 @@ function App(props: any) {
               setGameStarts={props.setGameStarts}
               language={props.language}
               placeInfo={placeInfo}
-            ></GamePage>
+            />
           }
-        ></Route>
+        />
       </Routes>
     </div>
   );
