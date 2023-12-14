@@ -1,15 +1,11 @@
 {
-  "server": false,
   "id": "131",
   "section": "planet",
   "label": {
-    "cz": "stoupání moří",
-    "en": "sea level rise",
-    "de": "das sea level rise"
+    "cz": "Stoupání moří",
+    "en": "Sea Level Rise",
+    "de": "Das Sea Level Rise"
   },
-  "x": 50,
-  "y": 50,
-  "inactivityTimeoutInMin": 3.5,
-  "port": "/dev/ttyUSB0",
-  "baudrate": 9600
+  "exhibitPostion": { "x": 50, "y": 50 },
+  "inactivityTimeoutInMin": 3.5
 }

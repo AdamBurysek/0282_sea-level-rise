@@ -1,4 +1,4 @@
-import "./howToPage.css";
+import "./infoPages.css";
 import { useEffect, useRef } from "react";
 
 const HowToPage = (props: any) => {

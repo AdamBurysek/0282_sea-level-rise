@@ -2,7 +2,13 @@ import WorldMap from "../images/stoupani-mori.png";
 import places from "../data/places.json";
 import { useEffect, useState } from "react";
 
-const StartPage = (props: any) => {
+interface StartPageProps {
+  setGameStarts: (value: boolean) => void;
+  language: string;
+  handleCityButtonClick: (city: any) => void;
+}
+
+const StartPage = (props: StartPageProps) => {
   const [randomCityNumber, setRandomCityNumber] = useState<number | null>(null);
   const maxUpdates = 3;
   let updates = 0;
@@ -43,7 +49,7 @@ const StartPage = (props: any) => {
       <div className="world-map_image">
         <img
           src={WorldMap}
-          alt=""
+          alt="World Map"
         />
       </div>
       {places.map((place, index) => (
@@ -57,7 +63,7 @@ const StartPage = (props: any) => {
           }
           style={{ left: place.latitude, top: place.longitude }}
           onClick={props.handleCityButtonClick}
-        ></button>
+        />
       ))}
       <div className="main_info-text-box">
         <h3 className="main_info-text">

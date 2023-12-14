@@ -1,4 +1,4 @@
-import "./knowMorePage.css";
+import "./infoPages.css";
 import { useEffect, useRef } from "react";
 
 const KnowMorePage = (props: any) => {

@@ -7,7 +7,6 @@ import "./App.css";
 
 function App(props: any) {
   const [placeInfo, setPlaceInfo] = useState<string[]>([]);
-
   const navigate = useNavigate();
 
   const handleCityButtonClick = (event: any) => {

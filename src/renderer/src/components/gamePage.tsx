@@ -3,9 +3,15 @@ import { useNavigate } from "react-router-dom";
 import Waves from "../images/vlny.png";
 import Buoy from "../images/buoy.png";
 
+interface GamePageProps {
+  setGameStarts: (value: boolean) => void;
+  language: string;
+  placeInfo: any;
+}
+
 const WATER_OFFSET: number = -652;
 
-const GamePage = (props: any) => {
+const GamePage = (props: GamePageProps) => {
   const navigate = useNavigate();
   const sliderRef = useRef<HTMLInputElement>(null);
   const [value, setValue] = useState(0);
@@ -38,6 +44,8 @@ const GamePage = (props: any) => {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     let val = parseInt(event.target.value);
+
+    // There is no 8 in the images. This fixing this problem.
     if (val === 8) {
       val = 9;
     }
@@ -68,7 +76,6 @@ const GamePage = (props: any) => {
         {props.language === "de" && props.placeInfo[3]}
       </h2>
       <h3 className="game_info-text">
-        {" "}
         {props.language === "cz" && "Výška vody:"}
         {props.language === "en" && "Water level:"}
         {props.language === "de" && "Wasserstand:"}
@@ -116,13 +123,13 @@ const GamePage = (props: any) => {
         <img
           className={wavesAnimate ? "waves waves_move" : "waves"}
           src={Waves}
-        ></img>
+        />
       </div>
       <img
         style={{ bottom: thumbPostion + 840 }}
         src={Buoy}
         className={buoyAnimation ? "buoy" : "buoy buoy_move"}
-      ></img>
+      />
       <button
         className="back_button"
         onClick={handleBackButtonClick}
