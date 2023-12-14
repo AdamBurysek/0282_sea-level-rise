@@ -42,7 +42,7 @@ const GamePage = (props: GamePageProps) => {
     };
   }, []);
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     let val = parseInt(event.target.value);
 
     // There is no 8 in the images. This fixing this problem.
@@ -87,7 +87,7 @@ const GamePage = (props: GamePageProps) => {
           className="slider"
           type="range"
           value={value}
-          onChange={handleChange}
+          onChange={handleSliderChange}
           min={0}
           max={8}
           step={1}

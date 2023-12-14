@@ -1,6 +1,6 @@
+import { useEffect, useState } from "react";
 import WorldMap from "../images/stoupani-mori.png";
 import places from "../data/places.json";
-import { useEffect, useState } from "react";
 
 interface StartPageProps {
   setGameStarts: (value: boolean) => void;
