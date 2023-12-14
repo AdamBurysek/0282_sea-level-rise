@@ -11,9 +11,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <HashRouter>
       <VidaMenu setup={setup}>
-        <App></App>
-        <HowToPage></HowToPage>
-        <KnowMorePage></KnowMorePage>
+        <App />
+        <HowToPage />
+        <KnowMorePage />
       </VidaMenu>
     </HashRouter>
   </React.StrictMode>

@@ -12,12 +12,13 @@ interface GamePageProps {
 const WATER_OFFSET: number = -652;
 
 const GamePage = (props: GamePageProps) => {
-  const navigate = useNavigate();
-  const sliderRef = useRef<HTMLInputElement>(null);
   const [value, setValue] = useState(0);
   const [thumbPostion, setThumbPostion] = useState(WATER_OFFSET);
   const [wavesAnimate, setWavesAnimate] = useState(false);
   const [buoyAnimation, setBuoyAnimation] = useState(true);
+
+  const navigate = useNavigate();
+  const sliderRef = useRef<HTMLInputElement>(null);
 
   function animationSwitch() {
     setBuoyAnimation(!buoyAnimation);
@@ -42,9 +43,8 @@ const GamePage = (props: GamePageProps) => {
     };
   }, []);
 
-  const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const onSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     let val = parseInt(event.target.value);
-
     // There is no 8 in the images. This fixing this problem.
     if (val === 8) {
       val = 9;
@@ -68,6 +68,7 @@ const GamePage = (props: GamePageProps) => {
   }
 
   const marks = ["0", "1", "2", "3", "4", "5", "6", "7", "8"];
+
   return (
     <div>
       <h2 className="city_title">
@@ -87,7 +88,7 @@ const GamePage = (props: GamePageProps) => {
           className="slider"
           type="range"
           value={value}
-          onChange={handleSliderChange}
+          onChange={onSliderChange}
           min={0}
           max={8}
           step={1}
