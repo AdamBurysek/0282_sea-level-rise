@@ -1,11 +1,11 @@
 {
-  "id": "131",
+  "id": "282",
   "section": "planet",
   "label": {
     "cz": "Stoupání moří",
     "en": "Sea Level Rise",
     "de": "Das Sea Level Rise"
   },
-  "exhibitPostion": { "x": 50, "y": 50 },
+  "exhibitPostion": { "x": 310, "y": 585 },
   "inactivityTimeoutInMin": 3.5
 }
