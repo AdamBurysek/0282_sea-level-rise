@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Waves from "../images/vlny.png";
-import Buoy from "../images/buoy.png";
+import Buoy from "./buoy";
+import Waves from "./waves";
 
 interface GamePageProps {
   setGameStarts: (value: boolean) => void;
@@ -12,36 +12,11 @@ interface GamePageProps {
 const WATER_OFFSET: number = -652;
 
 const GamePage = (props: GamePageProps) => {
-  const [value, setValue] = useState(0);
-  const [thumbPostion, setThumbPostion] = useState(WATER_OFFSET);
-  const [wavesAnimate, setWavesAnimate] = useState(false);
-  const [buoyAnimation, setBuoyAnimation] = useState(true);
+  const [value, setValue] = useState<number>(0);
+  const [thumbPostion, setThumbPostion] = useState<number>(WATER_OFFSET);
 
   const navigate = useNavigate();
   const sliderRef = useRef<HTMLInputElement>(null);
-
-  function animationSwitch() {
-    setBuoyAnimation(!buoyAnimation);
-  }
-
-  const animate = () => {
-    setTimeout(animationSwitch, 4000);
-  };
-
-  useEffect(() => {
-    animate();
-  }, [buoyAnimation]);
-
-  useEffect(() => {
-    animationSwitch();
-    setWavesAnimate(true);
-    const intervalId = setInterval(() => {
-      setWavesAnimate((prevIsToggled) => !prevIsToggled);
-    }, 10000);
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, []);
 
   const onSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     let val = parseInt(event.target.value);
@@ -121,16 +96,9 @@ const GamePage = (props: GamePageProps) => {
           }px 0px rgba(255, 255, 255, 0.6)`,
         }}
       >
-        <img
-          className={wavesAnimate ? "waves waves_move" : "waves"}
-          src={Waves}
-        />
+        <Waves />
       </div>
-      <img
-        style={{ bottom: thumbPostion + 840 }}
-        src={Buoy}
-        className={buoyAnimation ? "buoy" : "buoy buoy_move"}
-      />
+      <Buoy thumbPostion={thumbPostion} />
       <button
         className="back_button"
         onClick={handleBackButtonClick}
